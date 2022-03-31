@@ -1,0 +1,21 @@
+[{
+        "company": "Toyota",
+        "product": "Prius",
+        "color": [
+            "white pearl",
+            "Red Methalic",
+            "Silver Methalic"
+        ],
+        "type": "Gen-3"
+    },
+    {
+        "company": "Opel",
+        "product": "Corsita",
+        "color": [
+            "Negro",
+            "Azul mu oscuro",
+            "Gris Plata"
+        ],
+        "type": "Sportivo Limited Edition"
+    }
+]

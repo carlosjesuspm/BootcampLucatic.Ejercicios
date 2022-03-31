@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <concesionario>
+        <coche>
+            <company>Toyota</company>
+            <product>Prius</product>
+            <color>white pearl</color>
+            <color>Red Methalic</color>
+            <color>Silver Methalic</color>
+            <type>Gen-3</type>
+        </coche>
+        <coche>
+            <company>Opel</company>
+            <product>Corsita</product>
+            <color>Negro</color>
+            <color>Azul mu oscuro</color>
+            <color>Gris Plata</color>
+            <type>Sportivo Limited Edition</type>
+        </coche>
+    </concesionario>

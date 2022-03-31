@@ -1,0 +1,16 @@
+Creamos un middleware para comprobar si tengo acceso
+Basado en
+https://medium.com/@aarnlpezsosa/middleware-en-express-js-5ef947d668b
+
+localhost:3000/dashboard
+Prueba con Postman añadiendo en el body (Raw>Json) este valor
+
+//El mensaje sera You are an admin
+{
+    "isAdmin":true
+}
+
+//Mensaje indicando que no tienes permiso
+{
+    "isAdmin":false
+}

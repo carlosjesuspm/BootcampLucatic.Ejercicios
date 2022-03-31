@@ -1,0 +1,7 @@
+https://geekytheory.com/introduccion-a-express-js/
+
+Express.js está basado en Connect, que es un framework extensible de manejo de servidores HTTP, el cual provee plugins de alto rendimiento conocidos como middleware.
+
+
+Ahora leeremos ficheros externos.
+En este caso será un HTML

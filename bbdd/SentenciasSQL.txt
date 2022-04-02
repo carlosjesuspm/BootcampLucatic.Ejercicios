@@ -1,0 +1,49 @@
+1. SELECT * FROM restaurante.platos;
+
+2. SELECT plato_nombre, plato_calorias FROM restaurante.platos;
+
+3.a SELECT *
+    FROM restaurante.platos, restaurante.ingredientes
+    WHERE platos.plato_id=ingredientes.plato_id;
+
+3.b SELECT *
+    FROM restaurante.platos 
+    LEFT OUTER JOIN restaurante.ingredientes
+    ON platos.plato_id=ingredientes.plato_id;
+
+4.a SELECT *  
+    FROM restaurante.menus_platos 
+    group by mp_tipo;
+
+4.b SELECT distinct mp_tipo 
+    FROM restaurante.menus_platos;
+
+4.c SELECT *  
+    FROM restaurante.menus_platos 
+    group by mp_tipo
+    order by mp_tipo ASC;
+
+
+    SELECT distinct mp_tipo 
+    FROM restaurante.menus_platos
+    ORDER BY mp_tipo ASC;
+
+5.a SELECT platos.plato_nombre,menus_platos.mp_tipo 
+    FROM platos,menus_platos
+    WHERE platos.plato_id=menus_platos.plato_id;
+
+5.b SELECT distinct plato_nombre, menus_platos.mp_tipo
+    FROM platos,menus_platos
+    WHERE platos.plato_id=menus_platos.plato_id;
+
+5.c SELECT distinct plato_nombre, menus_platos.mp_tipo
+    FROM platos,menus_platos
+    WHERE menus_platos.mp_tipo='primero';
+
+5.d SELECT distinct plato_nombre, menus_platos.mp_tipo
+    FROM platos,menus_platos
+    WHERE menus_platos.mp_tipo='primero'
+    ORDER BY plato_nombre ASC;
+
+
+

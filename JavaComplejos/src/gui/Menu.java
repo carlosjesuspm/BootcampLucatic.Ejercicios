@@ -2,7 +2,7 @@ package gui;
 
 public class Menu {
 
-    public void mostrarMenu() {
+    public static void mostrarMenu() {
 
         System.out.println("----------------------------");
         System.out.println("---------EMPRESA.SL---------");
@@ -15,8 +15,7 @@ public class Menu {
         System.out.println("2. Añadir empleado");
         System.out.println("3. Modificar datos empleado");
         System.out.println("4. Eliminar empleado");
-        System.out.println("5. Incentivar director");
-        System.out.println("6. Incentivar gerente");
+        System.out.println("5. Incentivar director/gerente");
         System.out.println("0. Salir");
     }
 }

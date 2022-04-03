@@ -14,8 +14,9 @@ public class Menu {
         System.out.println("1. Mostrar los empleados");
         System.out.println("2. Añadir empleado");
         System.out.println("3. Modificar datos empleado");
-        System.out.println("5. Eliminar empleado");
-        System.out.println("4. Incentivar jefes");
+        System.out.println("4. Eliminar empleado");
+        System.out.println("5. Incentivar director");
+        System.out.println("6. Incentivar gerente");
         System.out.println("0. Salir");
     }
 }

@@ -20,6 +20,7 @@ public class ServiciosEmpresa implements IServiciosEmpresa {
     }
 
     public void modificarEmpleado() {
+        datos.modificarEmpleado();
     }
 
     public void eliminarEmpleado() {

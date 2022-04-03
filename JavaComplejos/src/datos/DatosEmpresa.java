@@ -63,7 +63,6 @@ public class DatosEmpresa implements IDatosEmpresa {
             if (i.getNombre().equalsIgnoreCase(nombreEmpleado)) {
                 listaEmpleados.remove(i);
                 System.out.println("Empleado eliminado");
-                break;
             } else {
                 System.out.println("No se ha encontrado empleado a eliminar");
             }
@@ -72,6 +71,17 @@ public class DatosEmpresa implements IDatosEmpresa {
     }
 
     public void modificarEmpleado() {
+        String nombreEmpleado = LeerTeclado.leerLinea("Introduce nombre del empleado a eliminar: ");
+
+        for (Empleado i : listaEmpleados) {
+            if (i.getNombre().equalsIgnoreCase(nombreEmpleado)) {
+                i.setNombre(LeerTeclado.leerLinea("Introduce nuevo nombre"));
+                i.setSalario(LeerTeclado.leerDouble("Introduce nuevo salario"));
+                System.out.println("Empleado modificado");
+            } else {
+                System.out.println("No se ha encontrado empleado a modificar");
+            }
+        }
     }
 
     // Incentivar

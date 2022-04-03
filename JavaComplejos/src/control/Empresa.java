@@ -9,10 +9,19 @@ public class Empresa {
 
     IServiciosEmpresa servicios = new ServiciosEmpresa();
 
-    public int elegirOpcion() {
+    public void interfazConsola() {
 
+        boolean seguir = true;
+        do {
+            Menu.mostrarMenu();
+            seguir = elegirOpcion();
+        } while (seguir);
+    }
+
+    public boolean elegirOpcion() {
+
+        boolean continuar = true;
         int opcion = LeerTeclado.leerInt("Introduce opción a realizar: ");
-
         switch (opcion) {
 
             case 1:
@@ -34,15 +43,16 @@ public class Empresa {
             case 5:
                 servicios.incentivarDirectorOGerente();
                 break;
+
+            case 6:
+                continuar = salir();
         }
-        return opcion;
+        return continuar;
     }
 
-    public void interfazConsola() {
-
-        do {
-            Menu.mostrarMenu();
-            elegirOpcion();
-        } while (elegirOpcion() == 6);
+    private boolean salir() {
+        String sino = LeerTeclado.leerLinea("¿Está seguro?(S/N)");
+        return (sino.toUpperCase().charAt(0) != 'S');
     }
+
 }

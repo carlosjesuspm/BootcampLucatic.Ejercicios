@@ -55,6 +55,7 @@ public class DatosEmpresa implements IDatosEmpresa {
         return 0;
     }
 
+    // Eliminar empleado
     public void eliminarEmpleado() {
         String nombreEmpleado = LeerTeclado.leerLinea("Introduce nombre del empleado a eliminar: ");
 

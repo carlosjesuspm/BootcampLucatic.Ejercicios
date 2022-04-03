@@ -23,11 +23,10 @@ public class ServiciosEmpresa implements IServiciosEmpresa {
     }
 
     public void eliminarEmpleado() {
+        datos.eliminarEmpleado();
     }
 
     public void incentivarDirectorOGerente() {
-    }
-
-    public void incentivarGerente() {
+        datos.incentivarDirectorOGerente();
     }
 }

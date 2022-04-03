@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class LeerTeclado {
 
+    @SuppressWarnings("resource")
     public static String leerLinea() {
         return new Scanner(System.in).nextLine();
     }
@@ -13,6 +14,7 @@ public class LeerTeclado {
         return leerLinea();
     }
 
+    @SuppressWarnings("resource")
     public static int leerInt() {
         return new Scanner(System.in).nextInt();
     }
@@ -22,6 +24,7 @@ public class LeerTeclado {
         return leerInt();
     }
 
+    @SuppressWarnings("resource")
     public static short leerShort() {
         return new Scanner(System.in).nextShort();
     }
@@ -31,6 +34,7 @@ public class LeerTeclado {
         return leerShort();
     }
 
+    @SuppressWarnings("resource")
     public static float leerFloat() {
         return new Scanner(System.in).nextFloat();
     }
@@ -40,37 +44,45 @@ public class LeerTeclado {
         return leerFloat();
     }
 
+    @SuppressWarnings("resource")
     public static long leerLong() {
         return new Scanner(System.in).nextLong();
     }
 
+    @SuppressWarnings("resource")
     public static long leerLong(String mensaje) {
         System.out.println(mensaje);
         return new Scanner(System.in).nextLong();
     }
 
+    @SuppressWarnings("resource")
     public static double leerDouble() {
         return new Scanner(System.in).nextDouble();
     }
 
+    @SuppressWarnings("resource")
     public static double leerDouble(String mensaje) {
         System.out.println(mensaje);
         return new Scanner(System.in).nextDouble();
     }
 
+    @SuppressWarnings("resource")
     public static byte leerByte() {
         return new Scanner(System.in).nextByte();
     }
 
+    @SuppressWarnings("resource")
     public static byte leerByte(String mensaje) {
         System.out.println(mensaje);
         return new Scanner(System.in).nextByte();
     }
 
+    @SuppressWarnings("resource")
     public static String leerPalabra() {
         return new Scanner(System.in).next();
     }
 
+    @SuppressWarnings("resource")
     public static String leerPalabra(String mensaje) {
         System.out.println(mensaje);
         return new Scanner(System.in).next();

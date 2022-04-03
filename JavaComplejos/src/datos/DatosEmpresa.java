@@ -62,6 +62,7 @@ public class DatosEmpresa implements IDatosEmpresa {
         for (Empleado i : listaEmpleados) {
             if (i.getNombre().equalsIgnoreCase(nombreEmpleado)) {
                 listaEmpleados.remove(i);
+                System.out.println("Empleado eliminado");
                 break;
             } else {
                 System.out.println("No se ha encontrado empleado a eliminar");
@@ -73,12 +74,17 @@ public class DatosEmpresa implements IDatosEmpresa {
     public void modificarEmpleado() {
     }
 
+    // Incentivar
     public void incentivarDirectorOGerente() {
         for (Empleado e : listaEmpleados) {
             if (e instanceof Director) {
                 ((Director) e).incentivoDirector();
+                System.out.println("Se ha incentivado al director");
             } else if (e instanceof Gerente) {
                 ((Gerente) e).incentivoGerente();
+                System.out.println("Se ha incentivado al gerente");
+            } else {
+                System.out.println("El empleado seleccionado no era ni director, ni gerente");
             }
         }
     }

@@ -14,6 +14,10 @@ public class Empleado {
     public Empleado() {
     }
 
+    public Empleado(String nombre) {
+        this.nombre = nombre;
+    }
+
     public Empleado(String nombre, double salario, Date fechaNacimiento) {
         this.nombre = nombre;
         this.salario = salario;
@@ -70,11 +74,9 @@ public class Empleado {
                 "}";
     }
 
-    public Empleado crearEmpleado() {
-        Empleado emp = new Empleado();
+    public void crearEmpleado() {
         this.nombre = LeerTeclado.leerLinea("Introduce nombre del nuevo empleado: ");
         this.salario = LeerTeclado.leerDouble("Introduzca el salario:");
         this.fechaNacimiento = new Date();
-        return emp;
     }
 }

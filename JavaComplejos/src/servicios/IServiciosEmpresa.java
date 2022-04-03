@@ -6,11 +6,11 @@ public interface IServiciosEmpresa {
 
     public void addEmpleado();
 
+    public void seleccionarEmpleado();
+
     public void modificarEmpleado();
 
     public void eliminarEmpleado();
 
-    public void incentivarDirector();
-
-    public void incentivarGerente();
+    public void incentivarDirectorOGerente();
 }

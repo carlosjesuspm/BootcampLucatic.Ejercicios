@@ -6,11 +6,12 @@ public interface IDatosEmpresa {
 
     public void addEmpleado();
 
+    public int seleccionarEmpleado();
+
     public void modificarEmpleado();
 
     public void eliminarEmpleado();
 
-    public void incentivarDirector();
+    public void incentivarDirectorOGerente();
 
-    public void incentivarGerente();
 }

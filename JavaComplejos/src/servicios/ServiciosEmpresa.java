@@ -15,6 +15,14 @@ public class ServiciosEmpresa implements IServiciosEmpresa {
         datos.addEmpleado();
     }
 
+    public void addDirector() {
+        datos.addDirector();
+    }
+
+    public void addGerente() {
+        datos.addGerente();
+    }
+
     public void seleccionarEmpleado() {
         datos.seleccionarEmpleado();
     }

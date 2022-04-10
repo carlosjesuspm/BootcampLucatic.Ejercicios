@@ -42,6 +42,18 @@ public class DatosEmpresa implements IDatosEmpresa {
         listaEmpleados.add(emp);
     }
 
+    public void addDirector() {
+        Director emp = new Director();
+        emp.crearEmpleado();
+        listaEmpleados.add(emp);
+    }
+
+    public void addGerente() {
+        Gerente emp = new Gerente();
+        emp.crearEmpleado();
+        listaEmpleados.add(emp);
+    }
+
     // Seleccionar Empleado
     public int seleccionarEmpleado() {
         String nombreEmpleadoIndicado = LeerTeclado.leerLinea("Introduce nombre empleado: ");

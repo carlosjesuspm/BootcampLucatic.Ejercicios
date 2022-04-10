@@ -6,6 +6,10 @@ public interface IServiciosEmpresa {
 
     public void addEmpleado();
 
+    public void addDirector();
+
+    public void addGerente();
+
     public void seleccionarEmpleado();
 
     public void modificarEmpleado();

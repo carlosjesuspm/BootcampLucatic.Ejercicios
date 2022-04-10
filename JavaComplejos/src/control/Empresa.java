@@ -33,18 +33,26 @@ public class Empresa {
                 break;
 
             case 3:
-                servicios.modificarEmpleado();
+                servicios.addDirector();
                 break;
 
             case 4:
-                servicios.eliminarEmpleado();
+                servicios.addGerente();
                 break;
 
             case 5:
-                servicios.incentivarDirectorOGerente();
+                servicios.modificarEmpleado();
                 break;
 
             case 6:
+                servicios.eliminarEmpleado();
+                break;
+
+            case 7:
+                servicios.incentivarDirectorOGerente();
+                break;
+
+            case 0:
                 continuar = salir();
         }
         return continuar;

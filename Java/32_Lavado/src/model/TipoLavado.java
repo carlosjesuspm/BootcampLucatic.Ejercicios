@@ -4,9 +4,9 @@ public enum TipoLavado {
 
     BASICO(3), NORMAL(5), SUPER(7);
 
-    private final int tiempoLavado;
+    private int tiempoLavado;
 
-    private void tiempoLavado(int tiempoLavado) {
+    private TipoLavado(int tiempoLavado) {
         this.tiempoLavado = tiempoLavado;
     }
 

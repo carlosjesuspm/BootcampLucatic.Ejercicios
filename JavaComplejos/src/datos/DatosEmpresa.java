@@ -43,15 +43,15 @@ public class DatosEmpresa implements IDatosEmpresa {
     }
 
     public void addDirector() {
-        Director emp = new Director();
-        emp.crearEmpleado();
-        listaEmpleados.add(emp);
+        Director dir = new Director();
+        dir.crearEmpleado();
+        listaEmpleados.add(dir);
     }
 
     public void addGerente() {
-        Gerente emp = new Gerente();
-        emp.crearEmpleado();
-        listaEmpleados.add(emp);
+        Gerente ger = new Gerente();
+        ger.crearEmpleado();
+        listaEmpleados.add(ger);
     }
 
     // Seleccionar Empleado

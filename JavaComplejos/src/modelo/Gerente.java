@@ -49,6 +49,6 @@ public class Gerente extends Empleado {
     public void incentivoGerente() {
         double salarioGerenteTotal = getSalario() * 1.05;
         this.setSalario(salarioGerenteTotal);
-        System.out.println("El gerente actual percibe un salario de " + this.getSalario() + "euros");
+        System.out.println("El gerente actual percibe un salario de " + this.getSalario() + " euros");
     }
 }

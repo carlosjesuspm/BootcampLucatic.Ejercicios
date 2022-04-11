@@ -49,7 +49,7 @@ public class Director extends Empleado {
     public void incentivoDirector() {
         double salarioDirectorTotal = (getSalario() * 1.10) + 100;
         this.setSalario(salarioDirectorTotal);
-        System.out.println("El Director actual percibe un salario de " + this.getSalario() + "euros");
+        System.out.println("El Director actual percibe un salario de " + this.getSalario() + " euros");
     }
 
 }

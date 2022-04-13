@@ -69,4 +69,14 @@ class testStringCalculator {
 		Assert.assertEquals(1+2+3+4+5+6+7+8, StringCalculator.Add("1,2,3,4,5,6,7,8"));
 	}	
 	
+	
+	// Requisito 5: Permitir al método Add() soportar nuevas líneas entre números (en vez de comas)
+	
+	@Test
+	public final void WhenTheAddMethodHandleNewLinesBetweenNumbersThenReturnTheirSum() {
+		
+		Assert.assertEquals(1+2+3+4+5+6+7+8, StringCalculator.Add("1n2,3,4,5,6k7,8"));
+		
+	}
+	
 }
